@@ -27,7 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'drf_tutorial.user',
-    'drf_tutorial.memo'
+    'drf_tutorial.memo',
 ]
 
 MIDDLEWARE = [

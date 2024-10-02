@@ -13,5 +13,6 @@ urlpatterns = [
     path('users/<int:pk>', UserViewSet.as_view({'get': 'retrieve'}), name='user-retrieve'),  # 사용자 조회
 
     # Memo
-    path('memos', MemoViewSet.as_view({'post': "create", "get": "list", "put": "update", "delete": "destroy"}))
+    path('memos', MemoViewSet.as_view({'post': "create", "get": "list"})),
+    path('memos/<int:pk>', MemoViewSet.as_view({"put": "update", "delete": "destroy"}))
 ]
